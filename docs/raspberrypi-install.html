@@ -554,45 +554,6 @@ wifiに接続後...
 
 以上で日本語設定終了です。
 
-h2. 補足資料
-
-h3. SDカードの初期化（フォーマット）
-
-既に使われているSDカードをラズパイで使うにはSDカードの初期化が必要です。
-
-"SDメモリカードフォーマッター":https://www.sdcard.org/jp/downloads/formatter_4/ をダウンロードして，インストールしてください。
-
-初期化したいSDカードを選択してください。
-
-フォーマットオプションはどっちでもいいです。
-| クイックフォーマット | 早い。ファイル内容はメモリに残ってる。 |
-| 上書きフォーマット | 遅い。メモリがすべて0で上書きされる。 |
-
-右下の'フォーマット'をクリックしたら初期化が開始します
-
-
-h3. HDMI非対応のディスプレイを使うには
-
-ラズパイに使用するディスプレイがHDMIに対応していない場合，追加作業が必要です。
-
-まずは，『RaspbianをSDカードに書き込む』まで完了してください。
-
-エクスプローラーを開き，『PC』内の『boot』を開いてください。
-
-『boot』直下に'config.txt'を *{color:red}メモ帳以外* のエディタで開き，以下の5行を追記し上書き保存してください。
-
-<pre><code>
-hdmi_ignore_edid=0xa5000080
-
-hdmi_force_hotplug=1
-
-hdmi_group=2
-
-hdmi_mode=35  #1280x1024  60 Hz
-
-disable_overscan=1
-</code></pre>
-
 
 h2. 参考サイト
 
@@ -603,7 +564,7 @@ h2. 参考サイト
   </pre>
   <div id="footer">
     <p>大分大学 M-creator</p>
-    <p>m-creator atmark m-creator.vbl.oita-u.ac.jp</p>
+    <p>mcreator302 atmark gmail.com</p>
     <p><b>2018/10/08</b></p>
   </div>
 </div>
