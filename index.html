@@ -1,0 +1,546 @@
+<html lang=ja><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>こどもプログラミング講座</title>
+<style>
+/*!
+ * Bootstrap Reboot v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+dfn {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  text-align: inherit;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+output {
+  display: inline-block;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+/*# sourceMappingURL=bootstrap-reboot.css.map */
+</style>
+<style><!--
+body { background-color:#d4d0c8; margin:0; padding:0; color:black }
+p { margin:0.5em }
+h1, h2, h3, h4, h5, h6 { color: white; margin:0; padding:0.5em 1em }
+h1 { background-color:#2f649f; margin:0 }
+h2.first { margin-top:0 }
+h1, h2 { font-weight:normal }
+h2 { background-color:#4F84bF }
+h3 { background-color:#6fa4df }
+ul, ol, table, img { margin:1em 2em }
+ul ul, ul ol, ol ul, ol ol { margin: 0.2em 0 }
+#main { background-color:white; margin:0 5%; padding:0; border-left:1px solid gray; border-right:1px solid gray }
+#out { background-color:white; line-height:1.2em }
+#out p { text-indent:1em; margin:0.5em 5% 0.5em 1em }
+#out table { border-collapse: collapse }
+#out table, #out td, #out th { border: 1px solid gray; }
+#out td { padding:0.5em }
+#out tr:hover { background-color:#fafafa }
+#footer { background-color:white; padding:0.5em; font-size:80%; color:gray; text-align:right; border-top:1px solid gray }
+#out img { border:1px solid gray; margin:1em; padding:0; }
+.name, .name a { color:white; font-family:"Arial Black" sans-serif; font-weight:bold; font-size:130%; text-decoration:underline }
+--></style>
+<script type="text/javascript">
+/***************************************
+*
+*	Javascript Textile->HTML conversion
+*
+*	ben@ben-daglish.net (with thanks to John Hughes for improvements)
+*   Issued under the "do what you like with it - I take no respnsibility" licence
+****************************************/
+var inpr,inbq,inbqq,html;
+var aliases = new Array;
+var alg={'>':'right','<':'left','=':'center','<>':'justify','~':'bottom','^':'top'};
+var ent={"'":"&#8217;"," - ":" &#8211; ","--":"&#8212;"," x ":" &#215; ","\\.\\.\\.":"&#8230;","\\(C\\)":"&#169;","\\(R\\)":"&#174;","\\(TM\\)":"&#8482;"};
+var tags={"b":"\\*\\*","i":"__","em":"_","strong":"\\*","cite":"\\?\\?","sup":"\\^","sub":"~","span":"\\%","del":"-","code":"@","ins":"\\+","del":"-"};
+var le="\n\n";
+var lstlev=0,lst="",elst="",intable=0,mm="";
+var para = /^p(\S*)\.\s*(.*)/;
+var rfn = /^fn(\d+)\.\s*(.*)/;
+var bq = /^bq\.(\.)?\s*/;
+var table=/^table\s*{(.*)}\..*/;
+var trstyle = /^\{(\S+)\}\.\s*\|/;
+function convert(t) {
+	var lines = t.split(/\r?\n/);
+	html="";
+	inpr=inbq=inbqq=0;
+	for(var i=0;i<lines.length;i++) {
+		if(lines[i].indexOf("[") == 0) {
+			var m = lines[i].indexOf("]");
+			aliases[lines[i].substring(1,m)]=lines[i].substring(m+1);
+		}
+	}
+	for(i=0;i<lines.length;i++) {
+		if (lines[i].indexOf("[") == 0) {continue;}
+		if(mm=para.exec(lines[i])){stp(1);inpr=1;html += lines[i].replace(para,"<p"+make_attr(mm[1])+">"+prep(mm[2]));continue;}
+		if(mm = /^h(\d)(\S*)\.\s*(.*)/.exec(lines[i])){stp(1);html += tag("h"+mm[1],make_attr(mm[2]),prep(mm[3]))+le;continue;}
+		if(mm=rfn.exec(lines[i])){stp(1);inpr=1;html+=lines[i].replace(rfn,'<p id="fn'+mm[1]+'"><sup>'+mm[1]+'<\/sup>'+prep(mm[2]));continue;}
+		if (lines[i].indexOf("*") == 0) {lst="<ul>";elst="<\/ul>";}
+		else if (lines[i].indexOf("#") == 0) {lst="<\ol>";elst="<\/ol>";}
+		else {while (lstlev > 0) {html += elst;if(lstlev > 1){html += "<\/li>";}else{html+="\n";}html+="\n";lstlev--;}lst="";}
+		if(lst) {
+			stp(1);
+			var m = /^([*#]+)\s*(.*)/.exec(lines[i]);
+			var lev = m[1].length;
+			while(lev < lstlev) {html += elst+"<\/li>\n";lstlev--;}
+			while(lstlev < lev) {html=html.replace(/<\/li>\n$/,"\n");html += lst;lstlev++;}
+			html += tag("li","",prep(m[2]))+"\n";
+			continue;
+		}
+		if (lines[i].match(table)){stp(1);intable=1;html += lines[i].replace(table,'<table style="$1;">\n');continue;}
+		if ((lines[i].indexOf("|") == 0)  || (lines[i].match(trstyle)) ) {
+			stp(1);
+			if(!intable) {html += "<table>\n";intable=1;}
+			var rowst="";var trow="";
+			var ts=trstyle.exec(lines[i]);
+			if(ts){rowst=qat('style',ts[1]);lines[i]=lines[i].replace(trstyle,"\|");}
+			var cells = lines[i].split("|");
+			for(j=1;j<cells.length-1;j++) {
+				var ttag="td";
+				if(cells[j].indexOf("_.")==0) {ttag="th";cells[j]=cells[j].substring(2);}
+				cells[j]=prep(cells[j]);
+				var al=/^([<>=^~\/\\\{]+.*?)\.(.*)/.exec(cells[j]);
+				var at="",st="";
+				if(al != null) {
+					cells[j]=al[2];
+					var cs= /\\(\d+)/.exec(al[1]);if(cs != null){at +=qat('colspan',cs[1]);}
+					var rs= /\/(\d+)/.exec(al[1]);if(rs != null){at +=qat('rowspan',rs[1]);}
+					var va= /([\^~])/.exec(al[1]);if(va != null){st +="vertical-align:"+alg[va[1]]+";";}
+					var ta= /(<>|=|<|>)/.exec(al[1]);if(ta != null){st +="text-align:"+alg[ta[1]]+";";}
+					var is= /\{([^\}]+)\}/.exec(al[1]);if(is != null){st +=is[1];}
+					if(st != ""){at+=qat('style',st);}
+				}
+				trow += tag(ttag,at,cells[j]);
+			}
+			html += "\t"+tag("tr",rowst,trow)+"\n";
+			continue;
+		}
+		if(intable) {html += "<\/table>"+le;intable=0;}
+		if (lines[i]=="") {stp();}
+		else if (!inpr) {
+			if(mm=bq.exec(lines[i])){lines[i]=lines[i].replace(bq,"");html +="<blockquote>";inbq=1;if(mm[1]) {inbqq=1;}}
+			html += "<p>"+prep(lines[i]);inpr=1;
+		}
+		else {html += prep(lines[i]);}
+	}
+	stp();
+	return html;
+}
+function prep(m){
+	for(i in ent) {m=m.replace(new RegExp(i,"g"),ent[i]);}
+	for(i in tags) {
+		m = make_tag(m,RegExp("^"+tags[i]+"(.+?)"+tags[i]),i,"");
+		m = make_tag(m,RegExp(" "+tags[i]+"(.+?)"+tags[i]),i," ");
+	}
+	m=m.replace(/\[(\d+)\]/g,'<sup><a href="#fn$1">$1<\/a><\/sup>');
+	m=m.replace(/([A-Z]+)\((.*?)\)/g,'<acronym title="$2">$1<\/acronym>');
+	m=m.replace(/\"([^\"]+)\":((http:|https:|mailto:|#)\S+)/g,'<a href="$2">$1<\/a>');
+	m = make_image(m,/!([^!\s]+)!:(\S+)/);
+	m = make_image(m,/!([^!\s]+)!/);
+	m=m.replace(/"([^\"]+)":(\S+)/g,function($0,$1,$2){return tag("a",qat('href',aliases[$2]),$1)});
+	m=m.replace(/(=)?"([^\"]+)"/g,function($0,$1,$2){return ($1)?$0:"&#8220;"+$2+"&#8221;"});
+	return m;
+}
+function make_tag(s,re,t,sp) {
+	while(m = re.exec(s)) {
+		var st = make_attr(m[1]);
+		m[1]=m[1].replace(/^[\[\{\(]\S+[\]\}\)]/g,"");
+		m[1]=m[1].replace(/^[<>=()]+/,"");
+		s = s.replace(re,sp+tag(t,st,m[1]));
+	}
+	return s;
+}
+function make_image(m,re) {
+	var ma = re.exec(m);
+	if(ma != null) {
+		var attr="";var st="";
+		var at = /\((.*)\)$/.exec(ma[1]);
+		if(at != null) {attr = qat('alt',at[1])+qat("title",at[1]);ma[1]=ma[1].replace(/\((.*)\)$/,"");}
+		if(ma[1].match(/^[><]/)) {st = "float:"+((ma[1].indexOf(">")==0)?"right;":"left;");ma[1]=ma[1].replace(/^[><]/,"");}
+		var pdl = /(\(+)/.exec(ma[1]);if(pdl){st+="padding-left:"+pdl[1].length+"em;";}
+		var pdr = /(\)+)/.exec(ma[1]);if(pdr){st+="padding-right:"+pdr[1].length+"em;";}
+		if(st){attr += qat('style',st);}
+		var im = '<img src="'+ma[1]+'"'+attr+" />";
+		if(ma.length >2) {im=tag('a',qat('href',ma[2]),im);}
+		m = m.replace(re,im);
+	}
+	return m;
+}
+function make_attr(s) {
+	var st="";var at="";
+	if(!s){return "";}
+	var l=/\[(\w\w)\]/.exec(s);
+	if(l != null) {at += qat('lang',l[1]);}
+	var ci=/\((\S+)\)/.exec(s);
+	if(ci != null) {
+		s = s.replace(/\((\S+)\)/,"");
+		at += ci[1].replace(/#(.*)$/,' id="$1"').replace(/^(\S+)/,' class="$1"');
+	}
+	var ta= /(<>|=|<|>)/.exec(s);if(ta){st +="text-align:"+alg[ta[1]]+";";}
+	var ss=/\{(\S+)\}/.exec(s);if(ss){st += ss[1];if(!ss[1].match(/;$/)){st+= ";";}}
+	var pdl = /(\(+)/.exec(s);if(pdl){st+="padding-left:"+pdl[1].length+"em;";}
+	var pdr = /(\)+)/.exec(s);if(pdr){st+="padding-right:"+pdr[1].length+"em;";}
+	if(st) {at += qat('style',st);}
+	return at;
+}
+function qat(a,v){return ' '+a+'="'+v+'"';}
+function tag(t,a,c) {return "<"+t+a+">"+c+"</"+t+">";}
+function stp(b){if(b){inbqq=0;}if(inpr){html+="<\/p>"+le;inpr=0;}if(inbq && !inbqq){html+="<\/blockquote>"+le;inbq=0;}}
+</script>
+</head><body onload="(function() { var t = document.getElementById('text'); document.getElementById('out').innerHTML = convert(t.innerText); t.style.display = 'none' })()">
+<div id="main">
+  <div id="out">
+    <noscript>Javascriptをつけると読みやすいよ</noscript>
+  </div>
+  <pre id="text">
+h1. ちっちゃなパソコンでプログラミング！？
+
+h2(first). 講座で使用した備品の確認
+
+ラズベリーパイ本体はクリックすると商品紹介ページへ飛びます！
+
+* "ラズベリーパイ ３ modelB+":https://jp.rs-online.com/web/p/products/1225826/?grossPrice=Y&cm_mmc=JP-PLA-DS3A-_-google-_-PLA_JP_JP_Semiconductors-_-%E5%8D%8A%E5%B0%8E%E4%BD%93%E9%96%8B%E7%99%BA%E3%82%AD%E3%83%83%E3%83%88-_-PRODUCT+GROUP&matchtype=&pla-329093645438&gclid=CjwKCAjwo_HdBRBjEiwAiPPXpEg1KzJN7a1dLlgQFBHuqu3j9IR_O2ls60O-dp2EJCbCe9btVvdzbRoCCK0QAvD_BwE&gclsrc=aw.ds
+* ディスプレイ(HDMI対応)
+* キーボード
+* マウス
+* マイクロSD 16GB
+* ACアダプタ＆コード(ACアダプタはマイクロUSBタイプのもの)
+
+h2. Desktop版Raspbian（ラズビアン）の設定
+
+"Raspbianインストールはこちら":https://m-creator.github.io/raspberrypi-install.html/
+
+h2(head). こどもプログラミング講座で学んだ内容
+
+h3. 講義資料
+
+2018年10月13日に行われた、ものづくり展で使用した資料です。
+* "ちっちゃなパソコンでプログラミング！？":https://m-creator.github.io/prog1.pdf
+
+h3. 参考文献
+
+* "私はC言語を知らない":https://postd.cc/i-do-not-know-c/
+
+  </pre>
+  <div id="footer">
+    <p>大分大学 VBL M-creator</p>
+    <p>mcreator302 atmark gmail.com</p>
+    <p><b>2018/10/13</b></p>
+  </div>
+</div>
+</body></html>
