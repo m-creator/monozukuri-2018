@@ -336,9 +336,11 @@ template {
 <style><!--
 body { background-color:#d4d0c8; margin:0; padding:0; color:black }
 p { margin:0.5em }
-h1, h2, h3, h4, h5, h6 { color: white; margin:0; padding:0.5em 1em }
-h1 { background-color:#2f649f; margin:0 }
+h1, h2 { color: white; margin:0.5em 0 0.5em 0; padding:0.5em 1em }
+h3, h4, h5, h6 { color: white; margin: 0; padding:0.5em 1em }
+h1 { background-color:#2f649f; margin-top:0 }
 h2.first { margin-top:0 }
+h2.head { margin:1em 0 0 0; }
 h1, h2 { font-weight:normal }
 h2 { background-color:#4F84bF }
 h3 { background-color:#6fa4df }
@@ -510,11 +512,36 @@ function stp(b){if(b){inbqq=0;}if(inpr){html+="<\/p>"+le;inpr=0;}if(inbq && !inb
   <pre id="text">
 h1. ちっちゃなパソコンでプログラミング！？
 
-h2(first). 講座で使用した備品の確認
+"ツクロー！ おおいた協働ものづくり展":http://www.oita-kogyoren.net/monozukuri/ で行った体験教室の資料ページです。
 
-ラズベリーパイ本体はクリックすると商品紹介ページへ飛びます！
+h2. ラズベリーパイの入手
 
-* "ラズベリーパイ ３ modelB+":https://jp.rs-online.com/web/p/products/1225826/?grossPrice=Y&cm_mmc=JP-PLA-DS3A-_-google-_-PLA_JP_JP_Semiconductors-_-%E5%8D%8A%E5%B0%8E%E4%BD%93%E9%96%8B%E7%99%BA%E3%82%AD%E3%83%83%E3%83%88-_-PRODUCT+GROUP&matchtype=&pla-329093645438&gclid=CjwKCAjwo_HdBRBjEiwAiPPXpEg1KzJN7a1dLlgQFBHuqu3j9IR_O2ls60O-dp2EJCbCe9btVvdzbRoCCK0QAvD_BwE&gclsrc=aw.ds
+大分県から手に入れるなら，ラズベリーパイはネット通販がおすすめです！
+
+以下は，Raspberry Pi 3 Model B+ を取り扱ってる通販ショップの一覧です。
+
+| 入手先 | URL | 商品ページ |
+| RSコンポーネンツ | https://jp.rs-online.com/ | "リンク":https://raspberry-pi.ksyic.com/main/index/pdp.id/435/pdp.open/435 |
+| Amazon | https://www.amazon.co.jp/ | "リンク":https://www.amazon.co.jp/dp/B00LT4BOK6/ |
+| スイッチサイエンス | https://www.switch-science.com/ | "リンク":https://www.switch-science.com/catalog/3850/ |
+| 千石電商 | https://www.sengoku.co.jp/ | "リンク":https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5ABJ |
+| マルツオンライン | https://www.marutsu.co.jp/ | "リンク":https://www.marutsu.co.jp/pc/i/1349448/ |
+| ModMyPi | https://www.modmypi.com/ | "リンク":https://www.modmypi.com/raspberry-pi/raspberry-pi-a-plusb-plus23-1015/rpi3-model-b-plus/raspberry-pi-3-model-b-plus |
+
+本教室ではRSコンポーネンツ製のラズベリーパイを使用しました。
+
+h2. 周辺機器の準備
+
+| 項目 | 仕様 |
+| SDカード | 容量8GB以上，class4以上 |
+| 電源アダプタ | MicroUSB-B，スマホ充電器でも可 |
+| USBキーボード | 日本語キーボードでOK |
+| USBマウス | パソコン用 |
+| HDMIケーブル | 長さは任意 |
+| HDMI対応モニタ | HMDIがつながればTVでもOK |
+| ネット環境 | LANケーブルやルーター |
+
+本教室では以下の製品を使用しました（名前をクリックすると商品ページが開きます）
 * "ディスプレイ(HDMI対応)":https://jpn.nec.com/products/ds/display/sproot/lcdas171m-c/index.html
 * "キーボード":https://www.amazon.co.jp/dp/B078GVYZGB
 * "マウス":https://www.amazon.co.jp/dp/B078GVYZGB
@@ -525,16 +552,18 @@ h2. Desktop版Raspbian（ラズビアン）の設定
 
 "Raspbianインストールはこちら":https://mcreator.github.io/monozukuri-2018/raspberrypi-install.html
 
-h2(head). こどもプログラミング講座で学んだ内容
+h2(head). 学んだ内容
 
-h3. 講義資料
+h3. スライド
 
-2018年10月13日に行われた、ものづくり展で使用した資料です。
 * "ちっちゃなパソコンでプログラミング！？":https://mcreator.github.io/monozukuri-2018/prog1.pdf
 
-h3. 参考文献
+h3. プログラム
 
-* "私はC言語を知らない":https://postd.cc/i-do-not-know-c/
+* "“ ”の中の文字を出力するプログラム":https://github.com/mcreator/monozukuri-2018/blob/master/prog1.c
+* "文字を１０回繰り返し出力するプログラム":https://github.com/mcreator/monozukuri-2018/blob/master/prog2.c
+* "繰り返し回数も表示するプログラム":https://github.com/mcreator/monozukuri-2018/blob/master/prog3.c
+* "整数を入力すると偶数か奇数か出力するプログラム":https://github.com/mcreator/monozukuri-2018/blob/master/prog4.c
 
   </pre>
   <div id="footer">
