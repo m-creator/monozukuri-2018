@@ -451,7 +451,7 @@ function prep(m){
 	}
 	m=m.replace(/\[(\d+)\]/g,'<sup><a href="#fn$1">$1<\/a><\/sup>');
 	m=m.replace(/([A-Z]+)\((.*?)\)/g,'<acronym title="$2">$1<\/acronym>');
-	m=m.replace(/\"([^\"]+)\":((http:|https:|mailto:|#)\S+)/g,'<a href="$2">$1<\/a>');
+	m=m.replace(/\"([^\"]+)\":((http:|https:|mailto:|#)\S+)/g,'<a href="$2" target="_brank">$1<\/a>');
 	m = make_image(m,/!([^!\s]+)!:(\S+)/);
 	m = make_image(m,/!([^!\s]+)!/);
 	m=m.replace(/"([^\"]+)":(\S+)/g,function($0,$1,$2){return tag("a",qat('href',aliases[$2]),$1)});
@@ -512,7 +512,16 @@ function stp(b){if(b){inbqq=0;}if(inpr){html+="<\/p>"+le;inpr=0;}if(inbq && !inb
   <pre id="text">
 h1. ちっちゃなパソコンでプログラミング！？
 
+ご参加いただきありがとうございました！
+
 "ツクロー！ おおいた協働ものづくり展":http://www.oita-kogyoren.net/monozukuri/ で行った体験教室の資料ページです。
+
+また，次の体験教室も開催予定です。身近のプログラミングに興味がある方をお誘いいただけると嬉しいです！
+
+場所：J:COM ホルトホール大分（ "公式サイト":http://www.horutohall-oita.jp/ ）
+
+日時（予定）：２０１８年１２月２７日（木）　１３：３０～
+
 
 h2. ラズベリーパイの入手
 
